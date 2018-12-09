@@ -1,6 +1,6 @@
 language: go
 go:
-- 1.8
+- 1.11
 script:
 - env GOOS=linux GOARCH=arm go build -v
 - mv homeautomation-homekit homeautomation-homekit_raspberrypi
