@@ -3,6 +3,5 @@ go:
 - 1.11
 install: true
 script:
-- cd cmd/homeautomation-homekit
-- env GO111MODULE=on GOOS=linux GOARCH=arm go build -mod=vendor -v
+- env GO111MODULE=on GOOS=linux GOARCH=arm go build cmd/homeautomation-homekit/main.go -mod=vendor -v
 - mv homeautomation-homekit homeautomation-homekit_raspberrypi
